@@ -1,0 +1,86 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.s-about-left,
+	.s-about-center {
+		margin-bottom: 50px;
+	}
+	.s-about-left p,
+	.s-about-right {
+		text-align: center;
+	}
+	.left {
+		border: none
+	}
+	footer{
+		text-align: center;
+	}
+	footer .social-wrap{
+		float: none;
+		margin-top: 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-text h1{
+		font-size: 28px;
+		border-width: 4px;
+		padding: 10px 10px;
+	}
+	.top-text p{
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	.portfolio-item-description h5{
+		margin-bottom: 0px;
+		margin-top: 7px;
+	}
+	.portfolio-item-description:hover{
+		padding-top: 2px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

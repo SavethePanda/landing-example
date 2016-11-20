@@ -1,0 +1,110 @@
+@import "../bourbon/bourbon"
+
+$color: #FF6347 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+$sub_header:#444343
+
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p, h3
+	color: $text_color
+
+h2
+	color: $sub_header
+.bg-light
+	background-color: $bg_light
+.bg-dark
+	background-color: $main_color
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+/* Custom */
+
+svg
+	fill: #fff
+.sandwich
+	background-color: $main_color
+	&:hover
+		background-color: #4e4e4e
+		box-shadow: 0 0 20px #ebe4e4, inset 0 0 10px #afafaf
+.top-text
+	h1
+		+kerning(4)
+	p
+		+kerning(3)
+
+.main-nav
+	a
+		+kerning(4)
+		&:hover
+			color: $color
+			+transition(.7s)
+.s-header
+	h2, div
+		+kerning(3)
+h3
+	+kerning(3)
+h4
+	color: $sub_header
+	+kerning(3)
+
+.s-about-left p:nth-child(even)
+	color: $color
+
+.years
+	+kerning(2)
+	background-color: $color
+.strong
+	color: $sub_header
+.portfolio-nav li
+	+kerning(3)
+	color: $text_color
+	&.a-active
+		border-bottom: 1px solid $color
+		color: #fff
+
+.portfolio-item-description
+	a
+		border: 1px solid $color
+	h5
+		+kerning(2)
+.portfolio-item-popup
+	h4
+		+kerning(2)
+		color: $main_color
+
+.contact-item
+	i
+		color: $color
+
+
+.s-contacts
+	button
+		background-color: $color
+		+kerning(2)
+	label
+		color: $text_color
+		+kerning(2)
+	input,
+	textarea
+		+kerning(2)
+	input:focus,textarea:focus
+		outline: 1px solid $color
+
+label.error
+	color: #c10000
